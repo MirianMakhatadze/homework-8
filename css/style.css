@@ -1,0 +1,126 @@
+.background-div {
+    width: 100%;
+    position: absolute;
+    margin-top: 250px;
+    display: block;
+    top: -40px;
+    z-index: 2;
+}
+.wrapper-background-image {
+    width: 100%;
+    height: 488.42px;
+    position: relative;
+    margin-top: 210px;
+    z-index: 1;
+
+}
+.background-image {
+    width: 100%;
+    height: 488.42px;
+    animation: groundanimation 8s linear infinite;
+    top: 0px;
+    z-index: 2;
+}
+.t-rex-div {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 390px;
+    left: 100px;
+    z-index: 10;
+}
+.t-rex-image {
+    width: 100%;
+    height: 100%;
+    animation: jumpanimation 2s linear infinite;
+}
+.cloud-div {
+    display: inline-block;
+    width: 150px;
+    position: absolute;
+    top: 100px;
+    right: 200px;
+}
+.cloud-image {
+    width: 100%;
+    animation: cloudanimation1 30s linear infinite;
+}
+.cloud2-div {
+    display: inline-block;
+    width: 190px;
+    position: absolute;
+    top: 200px;
+    right: 50px;
+    z-index: 9;
+}
+.cloud-image2 {
+    width: 100%;
+    animation: cloudanimation2 30s linear infinite;
+}
+.text-div {
+    display: inline-block;
+    margin-left: 100px;
+}
+.headline {
+    display: inline-block;
+    font-size: 60px;
+    font-weight: bold;
+    margin: 0 auto;
+    z-index: 10;
+}
+.headline2 {
+    font-size: 30px;
+    margin: 0 auto;
+}
+.ul {
+    margin-left: 50px;
+    list-style: disc;
+}
+.li-text {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.text {
+    margin-top: 5px;
+}
+
+                       /* keyframe animation*/
+@keyframes groundanimation {
+    0% {
+        transform: translatex(0) 
+    }
+    100% {
+        transform: translatex(-2000px)
+    }
+}
+
+@keyframes jumpanimation {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-150px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+@keyframes cloudanimation1 {
+    0% {
+        transform: translateX(200px);
+    }
+    100% {
+        transform: translateX(-2000px);
+    }
+}
+@keyframes cloudanimation2 {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-2000px);
+    }
+}
+
+    
